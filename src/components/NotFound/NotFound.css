@@ -1,0 +1,21 @@
+/* section{
+    display:grid;
+    place-items:center;
+    height:100vh;
+} */
+ .notfound_container {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    height:58vh;
+    font-size:2rem
+}
+ .notfound_container strong{
+    color:red; 
+}
+@media screen and (max-width:768px) {
+ .notfound_container {
+        font-size:1.5rem
+    }
+}

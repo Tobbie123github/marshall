@@ -1,0 +1,124 @@
+section{
+    width:100%;
+    margin-top:7rem;
+    display: grid;
+    place-items:center;
+}
+
+section .hero_container{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    align-items:center;
+}
+section .hero_container .img img{
+    width:15rem;
+    overflow:hidden;
+    border-radius:50%
+} 
+
+section .hero_container .heading h1{
+    font-size:50px;
+    text-align:center;
+}
+
+section .hero_container .heading  span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+
+}
+
+/* section .hero_container .heading #disp{
+    background:none;
+    color:red;
+    color:white;
+   
+
+} */
+section .hero_container p{
+    text-align:center;
+    font-size:20px;
+    width:70%;
+}
+section .hero_container .info{
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+    gap:3rem;
+
+}
+section .hero_container .info .connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size:22px;
+    cursor:pointer
+}
+section .hero_container .info .connect{
+transform: scale(1.05)
+}
+section .hero_container .info .resume{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border:2px solid white;
+    font-size:22px;
+    cursor:pointer
+}
+section .hero_container .info .resume{
+    transform: scale(1.05)
+    }
+
+
+@media screen and (max-width:1000px){
+    section .hero_container .img img{
+        width:14rem;
+    }
+
+    section .hero_container .heading h1{
+        font-size:40px;
+        
+    }
+      
+    section .hero_container p{
+        font-size:19px;
+        width:90%;
+    }
+
+    section .hero_container .info .connect{
+        padding: 18px 30px;
+        font-size:19px;
+
+    }
+    section .hero_container .info .resume{
+        padding: 18px 30px;
+        font-size:19px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+ 
+    section .hero_container .heading h1{
+        font-size:30px;
+    }
+    section .hero_container .img img{
+        width:13rem;
+    }
+    section .hero_container p{
+        font-size:17px;
+        width:100%;
+    }
+    section .hero_container .info .resume{
+        padding: 12px 20px;
+        font-size:17px;
+    }
+    section .hero_container .info .connect{
+        padding: 16px 16px;
+        font-size:17px;
+       
+    }
+}

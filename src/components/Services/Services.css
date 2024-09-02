@@ -1,0 +1,110 @@
+ .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+ .services .services_head {
+  position: relative;
+}
+ .services .services_head h1 {
+  padding: 0 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+ .services .services_head img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+section .container .card {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+
+section .container .card .skill {
+  border-radius: 19px;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 5px 5px 13px #1a1818, -5px -5px 13px #272626;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+  transition:0.3s;
+}
+section .container .card .skill:hover{
+    transform: scale(1.08);
+    background: linear-gradient(45deg,#3f0028, #582300);
+}
+
+.container .card .skill h2 {
+  font-size: 30px;
+  background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  font-weight: 600;
+}
+
+.container .card .skill h2 span img {
+  width: 3rem;
+}
+
+.container .card .skill p {
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:1000px){
+
+  section .services .services_head h1{
+      font-size:50px;
+      font-weight:600;
+      }
+      section .services .services_head img{
+          width:12rem
+      }
+      section .container .card {
+        grid-template-columns: 1fr 1fr;
+      }
+      .container .card .skill h2 {
+          font-size: 28px;
+      }
+
+      section .container .card .skill {
+          padding:2rem;
+      }
+}
+
+@media screen and (max-width:600px){
+  section .services .services_head h1{
+    font-size:45px;
+    font-weight:600;
+    }
+    section .services .services_head img{
+    width:10rem
+    }
+    .container .card .skill h2 {
+      font-size: 25px;
+  }
+  section .container .card {
+    grid-template-columns: 1fr ;
+  }
+  .container .card .skill h2 span img {
+    width: 2.3rem;
+  }
+  .container .card .skill p {
+    font-size: 17px;
+  }
+
+}

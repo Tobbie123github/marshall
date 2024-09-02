@@ -1,0 +1,99 @@
+section.details{
+    height:100vh;
+    display:grid;
+    place-items: center;
+    
+}
+
+section.details .porfolio_details{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    gap:2rem;
+    align-items:center;
+    box-shadow: 5px 5px 13px #1a1818, -5px -5px 13px #272626;
+    padding:2rem;
+    position:relative;
+    z-index:10;
+}
+section.details .porfolio_details .go_back{
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    padding:0.3rem;
+    color:white;
+    font-size: 30px;
+   
+
+}
+section.details .porfolio_details div img{
+    width:30rem;
+    transition: transform 0.3s ease;
+    transition-timing-function: ease-in-out;
+    cursor:pointer;
+    
+
+}
+
+section.details .porfolio_details div:hover   img{
+    transform: scale(1.05);
+}
+
+
+section.details .porfolio_details .details_content{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    justify-content: center;
+    
+}
+.porfolio_details .details_content h2{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.porfolio_details .details_content .technologies{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.details_content .technologies span{
+    display:flex;
+    gap:0.6rem;
+    font-size:30px;
+}
+.details_content .links{
+    display:flex;
+    gap:2rem;
+}
+
+.details_content .links div:nth-child(2) a{
+    color:white;
+    font-size:25px;
+}
+
+@media screen and (max-width:1200px){
+    section.details .porfolio_details{
+flex-direction: column;
+width:80%;
+    }
+
+section.details .porfolio_details div img{
+      width:70%;
+       margin-top:2rem
+    }
+    .porfolio_details .details_content p{
+        font-size:16px;
+
+    }
+}
+@media screen and (max-width:600px){
+  
+section.details .porfolio_details div img{
+        width:100%
+    }
+    section.details .porfolio_details{
+        width:90%;
+    }
+}
