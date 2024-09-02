@@ -103,8 +103,3 @@ nav .nav_container2 {
     cursor: pointer;
   }
 }
-@media screen and (max-width:600px){
-  nav{
-    height:4rem;
-  }
-}
