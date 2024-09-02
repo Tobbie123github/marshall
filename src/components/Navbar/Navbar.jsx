@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const variants = {
-  open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: "100%" },
+  open: { opacity: 1, x: 2 },
+  closed: { opacity: 0, x: "100%" },
 };
 
 const Navbar = () => {

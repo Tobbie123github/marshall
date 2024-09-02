@@ -26,7 +26,7 @@ const About =()=>{
                         <div className='my_skill'><p>Shopify</p><hr style={{width:"80%"}}/></div>
                         <div className='my_skill'><p>HTML & CSS</p><hr style={{width:"100%"}}/></div>
                         <div className='my_skill'><p>Javascript</p><hr style={{width:"70%"}}/></div>
-                        <div className='my_skill'><p>React</p><hr style={{width:"70%"}}/></div>
+                        <div className='my_skill'><p>React</p><hr style={{width:"80%"}}/></div>
                         <div className='my_skill'><p>PHP</p><hr style={{width:"90%"}}/></div>
                         <div className='my_skill'><p>MySQL</p><hr style={{width:"80%"}}/></div>
                         <div className='my_skill'><p>Git</p><hr style={{width:"100%"}}/></div>
